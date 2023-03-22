@@ -1,0 +1,37 @@
+body[data-theme="light"] {
+    --color-base: #fff;
+    --color-font: #1a1a1a;
+}
+
+body[data-theme="dark"] {
+    --color-base: #1a1a1a;
+    --color-font: #fff;
+}
+
+body {
+    background-color: var(--color-base);
+    color: var(--color-font);
+}
+
+.top {
+    height: 100vh;
+    display: grid;
+    grid-template: 1fr / repeat(2, 1fr);
+    padding: 5% 10%;
+
+}
+
+.top h1 {
+    /*background-image: linear-gradient(135deg, #24ff72, #2196f3);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    letter-spacing: .3em;*/
+
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    z-index: -100;
+}

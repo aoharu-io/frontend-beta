@@ -4,28 +4,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Rext | {description}</title>
-    <meta name="description" content={description} />
-    <meta name="theme-color" content="#1a1a1a" />
-    <link rel="icon" href="./assets/favicon.ico" />
+    <meta name="description" content={description}>
+    <meta name="theme-color" content="#1a1a1a">
+    <link rel="icon" href="./assets/favicon.ico">
 
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@rext_dev">
+    <meta property="og:url" content="https://rext-dev.github.io/frontend-beta/rext-www/">
+    <meta property="og:title" content="Rext">
+    <meta property="og:description" content="{description}">
+    <meta property="og:image" content="https://rext-dev.github.io/frontend-beta/rext-www/assets/rext.png">
+
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link href="https://unpkg.com/sanitize.css" rel="stylesheet">
     <link href="https://unpkg.com/sanitize.css/typography.css" rel="stylesheet">
     <link href="https://unpkg.com/sanitize.css/forms.css" rel="stylesheet">
     <link href="./css/index.css" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/vivus@latest/dist/vivus.min.js"></script>
 </head>
 
 <body data-language="ja" data-theme="light">
+    <header>
+        私達について
+        <span class="material-symbols-outlined">
+            login
+        </span>
+        ログイン
+        <span class="material-symbols-outlined">
+            translate
+        </span>
+        ja
+        <span class="material-symbols-outlined">
+            dark_mode
+        </span>
+        dark
+    </header>
+
     <div class="top">
-        <img src="./assets/rext-neon.svg" height="200">
-        <div class="">
-            <h1 class="title">Rext</h1>
-            <div class="subtitle">Discordで始まったつよつよプログラマ</div>
+        <h1>Rext.Dev</h1>
+        <div class="subtitle">Discordで始まったプログラマーチーム</div>
+        <div class="link">
+            <a href="https://rt.rext.dev/" target="_blank" class="button">
+                <img src="./assets/light/rt.png" alt="" class="light-theme">
+                <img src="./assets/dark/rt.png" alt="" class="dark-theme">
+                RT Web
+            </a>
+            <a href="https://discord.com/invite/aP7SG5XaTK/" target="_blank" class="button">
+                <img src="./assets/light/discord.png" alt="" class="light-theme">
+                <img src="./assets/dark/discord.png" alt="" class="dark-theme">
+                Discord Server
+            </a>
         </div>
+
+        <a href="#content" class="scroll">
+            <div>Scroll</div>
+            <span class="material-symbols-outlined">
+                keyboard_double_arrow_down
+            </span>
+        </a>
     </div>
-    <h1>Our projects</h1>
-    <canvas class="background"></canvas>
+
+    <main id="content">
+        <h1>Our projects</h1>
+        <a href="https://google.com/">Link to Google.</a>
+        <div class="img" data-file="discord.png"></div>
+    </main>
+
+    <svg id="background" viewBox="0 0 307.576 1087.427">
+        <g fill="none" stroke-linecap="round" stroke-width="5">
+            <path d="m276.004 2.5-75.662 163.58h-36.975l-42.023-90.853V2.5h5.734l54.436 122.428L236.291 2.5Z" />
+            <path d="M111.344 2.5v51.105l-10-21.619V2.5Z" />
+            <path d="M91.344 2.5v7.867L87.705 2.5Z" />
+            <path
+                d="M305.076 221.9v94.776c0 14.958-3.064 28.187-9.193 39.685-6.018 11.61-14.434 20.484-25.244 26.623-10.7 6.252-22.958 9.377-36.778 9.377-16.717 0-30.703-4.52-41.959-13.562-11.144-8.93-18.722-20.595-22.734-34.996l-47.824 24.879v-42.036l42.642-21.357v-46.217h-42.642V221.9Z" />
+            <path
+                d="M271.977 259.072v54.756c0 12.615-3.456 22.661-10.366 30.14-6.798 7.592-16.159 11.387-28.084 11.387-11.701 0-20.951-3.795-27.75-11.386-6.798-7.591-10.197-17.638-10.197-30.14v-54.757Z" />
+            <path d="M111.344 221.9v37.172h-10V221.9Z" />
+            <path d="M91.344 221.9v37.172h-10V221.9Z" />
+            <path d="M71.344 221.9v37.172h-10V221.9Z" />
+            <path d="M111.344 331.654v42.231l-10 5.203v-42.426Z" />
+            <path d="M91.344 341.67v42.619l-10 5.203v-42.814Z" />
+            <path d="M71.344 351.688v43.005l-10 5.203v-43.201Z" />
+            <path
+                d="M86.419 576.89q-14.208-14.232-20.728-28.8-6.352-14.568-6.352-36.337 0-16.745 4.847-31.145 4.848-14.233 15.38-24.782 10.532-10.55 27.583-16.41 17.051-5.86 41.124-5.86 27.917 0 47.81 9.041 19.893 9.21 30.425 25.787 10.531 16.578 10.531 38.848 0 22.773-10.531 39.518-10.532 16.745-29.59 25.452-18.89 8.707-43.463 8.707h-15.381V468.048q-15.212 0-26.078 5.191-10.699 5.191-16.717 14.903-5.851 9.88-5.851 24.28t4.012 23.275q4.012 8.875 13.708 18.922Z" />
+            <path
+                d="M162.314 468.048c6.687.447 11.367.893 14.042 1.34 2.786.558 5.962 1.619 9.529 3.181 6.686 2.903 12.036 7.368 16.048 13.396 4.012 6.14 6.018 13.229 6.018 21.266 0 8.15-2.006 15.182-6.018 21.099-4.012 6.028-9.362 10.437-16.048 13.228-6.687 2.79-14.544 4.354-23.571 4.689Z" />
+            <path
+                d="M234.865 609.375v42.196l-56.503 34.327 56.503 33.992v42.197l-84.922-56.932-88.599 59.276v-42.196l59.177-36.337-59.177-36.671V607.03l88.599 59.612Z" />
+            <path
+                d="M284.514 803.782v34.996h-52.658v33.658h-26.747v-33.658h-93.782q-20.227 0-20.227 19.257v14.401H61.344v-20.931q0-15.406 6.686-26.29 6.687-10.717 17.553-16.075 11.033-5.358 24.072-5.358h95.454v-19.759h26.747v19.759Z" />
+            <path d="M26.405 889.18v195.747H2.5V889.18Z" />
+        </g>
+    </svg>
+
     <script src="./js/index.js"></script>
 </body>
 

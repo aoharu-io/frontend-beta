@@ -72,7 +72,7 @@ a {
     background-color: var(--color-bw-60);
     transition: width .5s ease-in-out;
     mix-blend-mode: difference;
-    background-color: var(--color-bw-90);
+    background-color: #fff;
 }
 
 .button:hover::before {

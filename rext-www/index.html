@@ -20,9 +20,11 @@
     <link href="https://unpkg.com/sanitize.css" rel="stylesheet">
     <link href="https://unpkg.com/sanitize.css/typography.css" rel="stylesheet">
     <link href="https://unpkg.com/sanitize.css/forms.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos/dist/aos.css" />
     <link href="./css/index.css" rel="stylesheet">
 
-    <script src="https://cdn.jsdelivr.net/npm/vivus@latest/dist/vivus.min.js"></script>
+    <script src="https://unpkg.com/aos/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vivus/dist/vivus.min.js"></script>
 </head>
 
 <body data-language="ja" data-theme="light">
@@ -31,7 +33,6 @@
             <a href="about">About us</a>
         </div>
         <div>
-            
             <span class="material-symbols-outlined">
                 translate
             </span>
@@ -45,7 +46,7 @@
 
     <div class="top">
         <h1>Rext.Dev</h1>
-        <div class="subtitle">Discordで始まったプログラマーチーム</div>
+        <p class="subtitle">Discordで始まったプログラマーチーム</p>
         <div class="link">
             <a href="https://rt.rext.dev/" target="_blank" class="button">
                 <img src="./assets/light/rt.png" alt="" class="light-theme" height="35" width="35">
@@ -59,7 +60,7 @@
             </a>
         </div>
 
-        <a href="#content" class="scroll">
+        <a href="#main" class="scroll">
             <div>Scroll</div>
             <span class="material-symbols-outlined">
                 keyboard_double_arrow_down
@@ -67,11 +68,15 @@
         </a>
     </div>
 
-    <main id="content">
-        <h1>Our projects</h1>
+    <div id="main">
+        <h1 data-japanese="私たちについて">About us</h1>
+        <p>Hello World!</p>
+        <h1 data-japanese="関連プロジェクト">Our projects</h1>
+        <br>
         <a href="https://google.com/">Link to Google.</a>
+        <br>
         <h1>Test</h1>
-    </main>
+    </div>
 
     <svg id="background" viewBox="0 0 307.576 1087.427">
         <g fill="none" stroke-linecap="round" stroke-width="5">

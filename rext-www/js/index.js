@@ -28,4 +28,6 @@ if (theme == "system") {
 }
 document.body.setAttribute("data-theme", theme)
 
+AOS.init()
+
 new Vivus("background", { type: "oneByOne", duration: 1000 })

@@ -4,7 +4,6 @@ html {
 
 body[data-theme="light"] {
     --color-bw-10: hsl(0, 0%, 10%);
-    --color-bw-60: hsl(0, 0%, 60%);
     --color-bw-70: hsl(0, 0%, 70%);
     --color-bw-80: hsl(0, 0%, 80%);
     --color-bw-90: hsl(0, 0%, 90%);
@@ -13,7 +12,6 @@ body[data-theme="light"] {
 
 body[data-theme="dark"] {
     --color-bw-10: hsl(0, 0%, 90%);
-    --color-bw-60: hsl(0, 0%, 40%);
     --color-bw-70: hsl(0, 0%, 30%);
     --color-bw-80: hsl(0, 0%, 20%);
     --color-bw-90: hsl(0, 0%, 10%);
@@ -53,7 +51,7 @@ a {
     width: 200px;
     padding: 10px;
     color: var(--color-bw-10);
-    box-shadow: 0 0 10px var(--color-bw-60);
+    box-shadow: 0 0 10px var(--color-bw-70);
     margin: 15px;
 }
 
@@ -68,7 +66,6 @@ a {
     left: 0;
     height: 50px;
     width: 0;
-    background-color: var(--color-bw-60);
     transition: width .5s ease-in-out;
     mix-blend-mode: difference;
     background-color: #fff;
@@ -82,12 +79,20 @@ a {
 header {
     position: sticky;
     top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     height: 48px;
     margin: 0 10%;
     border-bottom: 2px solid var(--color-bw-80);
     z-index: 100;
     user-select: none;
 }
+
+header>div>* {
+    padding: 10px;
+}
+
 
 .top {
     position: relative;
@@ -98,19 +103,12 @@ header {
 }
 
 .top h1 {
-    display: inline-block;
-    background-color: #00DBDE;
-    background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
     margin: 1rem 0;
     font-size: 3rem;
 }
 
 .top .subtitle {
     font-size: 1.15rem;
-    text-shadow: 3px 3px 3px var(--color-bw-60);
 }
 
 .top .link {
@@ -130,24 +128,20 @@ header {
 .top .scroll div {
     writing-mode: vertical-rl;
     font-size: 1.5rem;
-    text-shadow: 3px -3px 3px var(--color-bw-60);
-    transition: color, text-shadow .5s ease-in-out;
+    transition: color .5s ease-in-out;
 }
 
 .top .scroll span {
     font-size: 2rem;
-    text-shadow: 3px 3px 3px var(--color-bw-60);
-    transition: color, text-shadow .5s ease-in-out;
+    transition: color .5s ease-in-out;
 }
 
 .top .scroll:hover div {
     color: var(--color-blue);
-    text-shadow: 3px -3px 3px var(--color-blue);
 }
 
 .top .scroll:hover span {
     color: var(--color-blue);
-    text-shadow: 3px 3px 3px var(--color-blue);
 }
 
 
@@ -156,7 +150,6 @@ header {
     top: 0;
     z-index: -50;
     height: 100%;
-    filter: drop-shadow(5px 5px 3px var(--color-bw-70));
 }
 
 #background g {

@@ -5,7 +5,8 @@ Rext関連プロジェクトのβ版フロントエンド
 
 | ディレクトリ | リポジトリ | GitHub Pages |
 | --- | --- | --- |
-| [`rext-www`](https://github.com/rext-dev/frontend-beta/tree/main/rext-www) | [`www`](https://github.com/rext-dev/www) | [https://rext-dev.github.io/frontend-beta/rext-www/](https://rext-dev.github.io/frontend-beta/rext-www/) |
+| [`rext-frontend`](https://github.com/rext-dev/frontend-beta/tree/main/rext-frontend) | [`frontend`](https://github.com/rext-dev/frontend) | [https://rext-dev.github.io/frontend-beta/rext-frontend/](https://rext-dev.github.io/frontend-beta/rext-frontend/) |
+| [`rt-dashboard`](https://github.com/rext-dev/frontend-beta/tree/main/rt-dashboard) | [`rt-frontend`](https://github.com/rext-dev/rt-frontend) | [https://rext-dev.github.io/frontend-beta/rt-dashboard/](https://rext-dev.github.io/frontend-beta/rt-dashboard/) |
 
 ディレクトリ … このリポジトリ内のディレクトリ名
 
